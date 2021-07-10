@@ -23,13 +23,15 @@
         <SortedDescendingCellStyle BackColor="#FFFDF8" />
         <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
     </asp:GridView>
-    <asp:Button ID="Button4" CssClass="my-3" runat="server" Text="Ajouter une catégorie" OnClick="Button4_Click" />
+    <asp:Button ID="Button4" CssClass="my-3 btn btn-primary" runat="server" Text="Ajouter une catégorie" OnClick="Button4_Click" />
     <p>
         <asp:Label ID="Label1" runat="server" Text="L'ajout de Nouvelle Catégorie"></asp:Label>
 &nbsp;</p>
     <asp:Label ID="Label2" runat="server" Text="Le titre de catégorie : "></asp:Label>
     <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-&nbsp;  <asp:Button ID="Button3" runat="server" Text="Ajouter" CssClass="btn btn-primary" OnClick="Button3_Click" /><p>
+&nbsp;  <asp:Button ID="Button3" runat="server" Text="Ajouter" CssClass="btn btn-success" OnClick="Button3_Click" />
+        <asp:Button ID="Button5" runat="server" CssClass="btn btn-warning" Text="Annuler" />
+      <p>
        
     </p>
       </div>

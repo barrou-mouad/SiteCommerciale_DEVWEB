@@ -35,7 +35,7 @@ namespace GestionCmd
             string source = "server=localhost ;integrated security=SSPI;database=Monprojet";
             SqlConnection con = new SqlConnection(source);
             con.Open();
-            SqlCommand cmd = new SqlCommand("DELETE from Categorie where id_cat="+ GridView1.Rows[e.RowIndex].Cells[1].Text, con);
+            SqlCommand cmd = new SqlCommand("DELETE from Categorie where id_cat="+ GridView1.Rows[e.RowIndex].Cells[2].Text, con);
 ;           cmd.ExecuteNonQuery();
             afficher();
         }

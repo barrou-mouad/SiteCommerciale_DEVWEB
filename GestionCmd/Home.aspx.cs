@@ -20,8 +20,8 @@ namespace GestionCmd
             con.Open();
             SqlCommand cmd = new SqlCommand("select id_article as 'numéro de commande',libelle as produit,pu as 'prix unitaire' from Article where id_cat=1", con);
             GridView1.DataSource= cmd.ExecuteReader();
-          
-      
+
+                Label2.Visible = false;
                 Label4.Visible = false;
                 TextBox1.Visible = false;
                 Button3.Visible = false;
@@ -91,7 +91,7 @@ namespace GestionCmd
                 cmd = new SqlCommand("insert into contient(qte,id_article,id_cmd)  values ("+TextBox1.Text+","+o.ToString()+","+ id_cmd +")", con);
                 cmd.ExecuteReader();
                 con.Close();
-            
+                Label2.Visible = true;
         }
     }
 } 
